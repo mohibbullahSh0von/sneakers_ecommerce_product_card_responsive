@@ -25,3 +25,17 @@
 
   --font-theme-kumbh: 'Kumbh Sans', sans-serif;
 }
+
+/* 1. For Firefox */
+input[type='number'] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+/* 2. For Chrome, Safari, Edge, Opera */
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
